@@ -1,0 +1,10 @@
+[Unit]
+Description=Prometheus Service
+After=network.target
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/prometheus
+
+[Install]
+WantedBy=multi-user.target
